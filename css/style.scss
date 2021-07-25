@@ -93,6 +93,77 @@ header {
     }
 }
 
+.popup-container {
+    width: 70vw;
+    height: 70vh;
+
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border: 1px solid black;
+    background-color: white;
+
+    .left-subcontainer {
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        background-color: #E1C5C5;
+
+        .logo-popup {
+            width: 27%;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align: center;
+            width: 190px;
+            color: white;
+        }
+
+        .info-popup-container {
+
+            margin-top: 50px;
+
+            .contactoinfo-popup {
+                display: flex;
+                align-items: center;
+                border: 1px solid red;
+                
+                width: 200px;
+    
+                .pop-img {
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid red;
+                }
+    
+                .pop-txt {
+                    border: 1px solid red;
+                    color: white;
+                    margin-left: 10px;
+    
+                    width: auto;
+                    max-width: 150px;
+                    
+                }
+            }
+        }
+        
+
+        
+    }
+
+}
+
+
 .cards-section {
     width: 80%;
     margin: 160px auto;

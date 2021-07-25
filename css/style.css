@@ -109,6 +109,76 @@ header .socialmedia-header {
   cursor: pointer;
 }
 
+.popup-container {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border: 1px solid black;
+  background-color: white;
+}
+
+.popup-container .left-subcontainer {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E1C5C5;
+}
+
+.popup-container .left-subcontainer .logo-popup {
+  width: 27%;
+  margin-top: 20px;
+}
+
+.popup-container .left-subcontainer p {
+  margin-top: 30px;
+  font-size: 14px;
+  text-align: center;
+  width: 190px;
+  color: white;
+}
+
+.popup-container .left-subcontainer .info-popup-container {
+  margin-top: 50px;
+}
+
+.popup-container .left-subcontainer .info-popup-container .contactoinfo-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.popup-container .left-subcontainer .info-popup-container .contactoinfo-popup .pop-img {
+  width: 16px;
+  height: 16px;
+  border: 1px solid red;
+}
+
+.popup-container .left-subcontainer .info-popup-container .contactoinfo-popup .pop-txt {
+  border: 1px solid red;
+  color: white;
+  margin-left: 10px;
+  width: auto;
+  max-width: 150px;
+}
+
 .cards-section {
   width: 80%;
   margin: 160px auto;
