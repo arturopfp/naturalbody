@@ -44,31 +44,72 @@
         <section class="slider-section">
             <div>
                 <h1>La <span class="green-txt">salud</span> es una relación entre tú y tu <span class="green-txt">cuerpo</span></h1>
-                <button class="cta-button trigger_popup_fricc">Agenda tu cita</button>
+                <button class="cta-button" id="cta-btn">Agenda tu cita</button>
             </div>
             <img class="slider-img" src="assets/sliderImg.png" alt="">
         </section>
 
         <!-- POP UP  -->    
-        <div class="popup-container">
-            <div class="left-subcontainer"> 
-                <img class="logo-popup" src="assets/LOGO-NATURALBODY-3.0.png" alt="">
-                <p>Llena nuestro formulario y nos pondremos en contacto contigo </p>
+        <div class="popup-container display-none" id="popUp-ctn">
+            <div class="left-subcontainer">
+                <img class="logo-popup" src="assets/LOGO-NATURALBODY-2.jpg" alt="" srcset="">
+                <p class="popup-txt">Llena nuestro formulario y nos pondremos en contacto contigo</p>
                 <div class="info-popup-container">
                     <div class="contactoinfo-popup">
-                        <img class="pop-img" src="assets/icons/phone.png" alt="">
+                        <img src="assets/telephone-fill.svg" alt="" >
                         <p class="pop-txt">777 456 78 90</p>
                     </div>
                     <div class="contactoinfo-popup">
-                        <img class="pop-img" src="assets/icons/mail.png" alt="">
+                        <img src="assets/envelope-fill.svg" alt="" >
                         <p class="pop-txt">contacto@correo.com</p>
                     </div>
                     <div class="contactoinfo-popup">
-                        <img class="pop-img" src="assets/icons/location.png" alt="">
+                        <img src="assets/geo-alt-fill.svg" alt="" >
                         <p class="pop-txt">Álvaro Obregón #129, Cuernavaca Centro, Centro, 62000 Cuernavaca, Mor.</p>
                     </div>
-                </div>    
+                </div>
             </div>
+            <div class="rigth-subcontainer">
+                <h3 class="popup-heading">AGENDA TU CITA</h3>
+                <form class="form-popup" action="">
+                    <div class="form-left-popup">
+                        <div class="formpopup-el">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre">
+                        </div>    
+
+                        <div class="formpopup-el">
+                            <label for="correo">Correo:</label>
+                            <input type="email" name="correo">
+                        </div>    
+
+                        <div class="formpopup-el">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" id="">
+                        </div>
+                    </div>
+                    <div class="form-rigth-popup">
+                        <div class="formpopup-el">
+                            <label for="servicio">Servicio:</label>
+                            <select name="" id="">
+                                <option value="">CONSULTA ONLINE</option>
+                                <option value="">LIPOLASER</option>
+                                <option value="">CAVITACION</option>
+                                <option value="">INFORMACIÓN</option>
+                            </select>
+                        </div>
+                        <div class="formpopup-el">
+                            <label for="fecha">Fecha</label>
+                            <input type="date" name="" id="">
+                        </div>
+                        <input class="btn-popup" type="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+            <div class="closeicon-popup" id="closeicon">
+                <img src="assets/x-circle-fill.svg" alt="">
+            </div>
+            
         </div>
 
         <section class="cards-section">

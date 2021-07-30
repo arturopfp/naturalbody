@@ -27,6 +27,7 @@ header {
 
 header .logo {
   max-width: 110px;
+  margin-top: 25px;
 }
 
 header nav {
@@ -112,11 +113,12 @@ header .socialmedia-header {
 .popup-container {
   width: 70vw;
   height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 13%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  left: 15%;
   border: 1px solid black;
   background-color: white;
 }
@@ -134,7 +136,7 @@ header .socialmedia-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #E1C5C5;
+  background-color: #c5d4a8;
 }
 
 .popup-container .left-subcontainer .logo-popup {
@@ -142,7 +144,7 @@ header .socialmedia-header {
   margin-top: 20px;
 }
 
-.popup-container .left-subcontainer p {
+.popup-container .left-subcontainer .popup-txt {
   margin-top: 30px;
   font-size: 14px;
   text-align: center;
@@ -158,25 +160,162 @@ header .socialmedia-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
-  width: 200px;
+  margin: 20px;
+  height: auto;
+  width: 250px;
 }
 
 .popup-container .left-subcontainer .info-popup-container .contactoinfo-popup .pop-img {
   width: 16px;
   height: 16px;
-  border: 1px solid red;
 }
 
 .popup-container .left-subcontainer .info-popup-container .contactoinfo-popup .pop-txt {
-  border: 1px solid red;
   color: white;
-  margin-left: 10px;
+  margin-left: 40px;
   width: auto;
   max-width: 150px;
+}
+
+.popup-container .rigth-subcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.popup-container .rigth-subcontainer .popup-heading {
+  margin-top: 35px;
+  font-size: 48px;
+}
+
+.popup-container .rigth-subcontainer .form-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 85%;
+  margin-top: 30px;
+  height: 60%;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-left-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-left-popup .formpopup-el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  height: 60px;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-left-popup .formpopup-el label {
+  font-size: 14px;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-left-popup .formpopup-el input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 80%;
+  height: 35px;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-rigth-popup {
+  width: 50%;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-rigth-popup .formpopup-el {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  height: 80px;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-rigth-popup .formpopup-el label {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-rigth-popup .formpopup-el select, .popup-container .rigth-subcontainer .form-popup .form-rigth-popup .formpopup-el input {
+  width: 95%;
+  height: 40px;
+}
+
+.popup-container .rigth-subcontainer .form-popup .form-rigth-popup .btn-popup {
+  width: 50%;
+  height: 30px;
+  margin: 0px auto 0px auto;
+}
+
+.popup-container .closeicon-popup {
+  position: relative;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+}
+
+.popup-container .closeicon-popup img {
+  width: 100%;
+  height: 100%;
+}
+
+.popup-container .closeicon-popup:hover {
+  cursor: pointer;
+}
+
+.display-none {
+  display: none;
 }
 
 .cards-section {
